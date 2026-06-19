@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "dashboard": "Inicio",
+    "transactions": "Transacciones",
+    "send": "Enviar dinero",
+    "cards": "Tarjetas",
+    "settings": "Ajustes"
+  },
+  "dashboard": {
+    "greeting": "Hola de nuevo, {{name}}",
+    "balanceLabel": "Saldo disponible",
+    "addMoney": "Añadir dinero",
+    "request": "Solicitar",
+    "recentActivity": "Actividad reciente",
+    "viewAll": "Ver todo",
+    "spentThisMonth": "Has gastado {{amount}} este mes",
+    "transactionCount_one": "{{count}} transacción esta semana",
+    "transactionCount_other": "{{count}} transacciones esta semana"
+  },
+  "transactions": {
+    "title": "Transacciones",
+    "searchPlaceholder": "Buscar transacciones",
+    "filterAll": "Todas",
+    "filterIncome": "Ingresos",
+    "filterExpenses": "Gastos",
+    "emptyTitle": "Aún no hay transacciones",
+    "emptyBody": "Cuando envíes o recibas dinero, aparecerá aquí.",
+    "pending": "Pendiente"
+  },
+  "send": {
+    "title": "Enviar dinero",
+    "recipientLabel": "Destinatario",
+    "recipientPlaceholder": "Nombre, correo o número de teléfono",
+    "amountLabel": "Importe",
+    "notePlaceholder": "¿Para qué es esto?",
+    "reviewButton": "Revisar transferencia",
+    "confirmBody": "Vas a enviar {{amount}} a {{recipient}}.",
+    "confirmButton": "Enviar ahora",
+    "successTitle": "Tu dinero está en camino",
+    "insufficientFunds": "No tienes saldo suficiente para esta transferencia."
+  },
+  "settings": {
+    "title": "Ajustes",
+    "language": "Idioma",
+    "signOut": "Cerrar sesión",
+    "saveChanges": "Guardar cambios",
+    "saved": "Tus cambios se han guardado."
+  },
+  "errors": {
+    "generic": "Algo salió mal. Inténtalo de nuevo.",
+    "network": "No pudimos conectar con Meridian. Revisa tu conexión e inténtalo de nuevo."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "dashboard": "Accueil",
+    "transactions": "Transactions",
+    "send": "Envoyer de l'argent",
+    "cards": "Cartes",
+    "settings": "Paramètres"
+  },
+  "dashboard": {
+    "greeting": "Bon retour, {{name}}",
+    "balanceLabel": "Solde disponible",
+    "addMoney": "Ajouter de l'argent",
+    "request": "Demander",
+    "recentActivity": "Activité récente",
+    "viewAll": "Tout voir",
+    "spentThisMonth": "Vous avez dépensé {{amount}} ce mois-ci",
+    "transactionCount_one": "{{count}} transaction cette semaine",
+    "transactionCount_other": "{{count}} transactions cette semaine"
+  },
+  "transactions": {
+    "title": "Transactions",
+    "searchPlaceholder": "Rechercher des transactions",
+    "filterAll": "Toutes",
+    "filterIncome": "Revenus",
+    "filterExpenses": "Dépenses",
+    "emptyTitle": "Aucune transaction pour le moment",
+    "emptyBody": "Lorsque vous envoyez ou recevez de l'argent, cela apparaît ici.",
+    "pending": "En attente"
+  },
+  "send": {
+    "title": "Envoyer de l'argent",
+    "recipientLabel": "Destinataire",
+    "recipientPlaceholder": "Nom, e-mail ou numéro de téléphone",
+    "amountLabel": "Montant",
+    "notePlaceholder": "À quoi sert ce paiement ?",
+    "reviewButton": "Vérifier le virement",
+    "confirmBody": "Vous envoyez {{amount}} à {{recipient}}.",
+    "confirmButton": "Envoyer maintenant",
+    "successTitle": "Votre argent est en route",
+    "insufficientFunds": "Vous n'avez pas assez de fonds pour ce virement."
+  },
+  "settings": {
+    "title": "Paramètres",
+    "language": "Langue",
+    "signOut": "Se déconnecter",
+    "saveChanges": "Enregistrer les modifications",
+    "saved": "Vos modifications ont été enregistrées."
+  },
+  "errors": {
+    "generic": "Une erreur s'est produite. Veuillez réessayer.",
+    "network": "Impossible de joindre Meridian. Vérifiez votre connexion et réessayez."
+  }
+}

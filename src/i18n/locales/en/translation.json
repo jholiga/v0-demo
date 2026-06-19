@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "transactions": "Transactions",
+    "send": "Send money",
+    "cards": "Cards",
+    "settings": "Settings"
+  },
+  "dashboard": {
+    "greeting": "Welcome back, {{name}}",
+    "balanceLabel": "Available balance",
+    "addMoney": "Add money",
+    "request": "Request",
+    "recentActivity": "Recent activity",
+    "viewAll": "View all",
+    "spentThisMonth": "You've spent {{amount}} this month",
+    "transactionCount_one": "{{count}} transaction this week",
+    "transactionCount_other": "{{count}} transactions this week"
+  },
+  "transactions": {
+    "title": "Transactions",
+    "searchPlaceholder": "Search transactions",
+    "filterAll": "All",
+    "filterIncome": "Income",
+    "filterExpenses": "Expenses",
+    "emptyTitle": "No transactions yet",
+    "emptyBody": "When you send or receive money, it'll show up here.",
+    "pending": "Pending"
+  },
+  "send": {
+    "title": "Send money",
+    "recipientLabel": "Recipient",
+    "recipientPlaceholder": "Name, email, or phone number",
+    "amountLabel": "Amount",
+    "notePlaceholder": "What's this for?",
+    "reviewButton": "Review transfer",
+    "confirmBody": "You're sending {{amount}} to {{recipient}}.",
+    "confirmButton": "Send now",
+    "successTitle": "Your money is on its way",
+    "insufficientFunds": "You don't have enough to cover this transfer."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "signOut": "Sign out",
+    "saveChanges": "Save changes",
+    "saved": "Your changes have been saved."
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "network": "We couldn't reach Meridian. Check your connection and try again."
+  }
+}
