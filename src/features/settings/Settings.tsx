@@ -36,7 +36,7 @@ function Settings() {
 
       {/* Hardcoded regulatory disclosure */}
       <footer className="legal">
-        Northwind is a financial technology company, not a bank. Banking services
+        Ditto Pay is a financial technology company, not a bank. Banking services
         are provided by partner banks, Members FDIC.
       </footer>
     </div>

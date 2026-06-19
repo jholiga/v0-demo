@@ -1,6 +1,6 @@
-# Northwind
+# Ditto Pay
 
-Banking that moves with you. Northwind is a web app for spending, saving, and
+Banking that moves with you. Ditto Pay is a web app for spending, saving, and
 sending money — built with React, TypeScript, and Vite.
 
 ## Getting started
@@ -30,7 +30,7 @@ The app runs at [http://localhost:5173](http://localhost:5173).
 
 ## Internationalization
 
-Northwind ships in English and Spanish. Translations live in
+Ditto Pay ships in English and Spanish. Translations live in
 `src/i18n/locales/<locale>/translation.json` and are wired up with
 [react-i18next](https://react.i18next.com/). The active language follows the
 user's browser preference and can be changed from **Settings → Language**.
