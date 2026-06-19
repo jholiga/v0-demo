@@ -4,7 +4,7 @@ function TopBar() {
       <div className="topbar-spacer" />
       <div className="topbar-actions">
         {/* Hardcoded labels — not yet localized */}
-        <button className="icon-button" aria-label="Search Meridian">
+        <button className="icon-button" aria-label="Search Northwind">
           <span aria-hidden="true">⌕</span>
         </button>
         <button className="icon-button" aria-label="View notifications">

@@ -24,7 +24,7 @@ function Sidebar({ view, onNavigate }: SidebarProps) {
         <span className="brand-mark" aria-hidden="true">
           ◐
         </span>
-        Meridian
+        Northwind
       </div>
       <nav className="sidebar-nav" aria-label="Primary">
         {items.map((item) => (
@@ -38,7 +38,7 @@ function Sidebar({ view, onNavigate }: SidebarProps) {
         ))}
       </nav>
       <div className="sidebar-footer">
-        <a href="https://help.meridian.example" className="sidebar-help">
+        <a href="https://help.northwind.example" className="sidebar-help">
           Help center
         </a>
       </div>
