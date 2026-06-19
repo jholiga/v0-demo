@@ -4,15 +4,13 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 import en from "./locales/en/translation.json";
 import es from "./locales/es/translation.json";
-import fr from "./locales/fr/translation.json";
 
 export const resources = {
   en: { translation: en },
   es: { translation: es },
-  fr: { translation: fr },
 } as const;
 
-export const supportedLngs = ["en", "es", "fr"] as const;
+export const supportedLngs = ["en", "es"] as const;
 
 i18n
   .use(LanguageDetector)

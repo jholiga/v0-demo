@@ -1,16 +1,13 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { supportedLngs } from "../../i18n";
 
 const languageNames: Record<string, string> = {
   en: "English",
   es: "Español",
-  fr: "Français",
 };
 
 function Settings() {
   const { t, i18n } = useTranslation();
-  const [saved, setSaved] = useState(false);
 
   return (
     <div className="view">
@@ -22,10 +19,7 @@ function Settings() {
           <select
             className="field-input"
             value={i18n.resolvedLanguage}
-            onChange={(event) => {
-              i18n.changeLanguage(event.target.value);
-              setSaved(false);
-            }}
+            onChange={(event) => i18n.changeLanguage(event.target.value)}
           >
             {supportedLngs.map((lng) => (
               <option key={lng} value={lng}>
@@ -36,13 +30,8 @@ function Settings() {
         </label>
 
         <div className="settings-actions">
-          <button className="btn btn-primary" onClick={() => setSaved(true)}>
-            {t("settings.saveChanges")}
-          </button>
           <button className="btn btn-secondary">{t("settings.signOut")}</button>
         </div>
-
-        {saved && <p className="field-success">{t("settings.saved")}</p>}
       </section>
 
       {/* Hardcoded regulatory disclosure */}

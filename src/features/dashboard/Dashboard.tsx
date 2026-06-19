@@ -8,7 +8,6 @@ interface DashboardProps {
 const activity = [
   { id: 1, name: "Blue Bottle Coffee", amount: "-$5.40" },
   { id: 2, name: "Payroll deposit", amount: "+$2,480.00" },
-  { id: 3, name: "Lyft", amount: "-$18.75" },
 ];
 
 function Dashboard({ onNavigate }: DashboardProps) {
@@ -25,7 +24,6 @@ function Dashboard({ onNavigate }: DashboardProps) {
           <button className="btn btn-primary" onClick={() => onNavigate("send")}>
             {t("dashboard.addMoney")}
           </button>
-          <button className="btn btn-secondary">{t("dashboard.request")}</button>
         </div>
         <p className="balance-note">
           {t("dashboard.spentThisMonth", { amount: "$1,950.00" })}
@@ -35,9 +33,6 @@ function Dashboard({ onNavigate }: DashboardProps) {
       <section className="panel">
         <div className="panel-head">
           <h2 className="panel-title">{t("dashboard.recentActivity")}</h2>
-          <button className="link-button" onClick={() => onNavigate("transactions")}>
-            {t("dashboard.viewAll")}
-          </button>
         </div>
         <ul className="activity-list">
           {activity.map((row) => (
@@ -47,9 +42,6 @@ function Dashboard({ onNavigate }: DashboardProps) {
             </li>
           ))}
         </ul>
-        <p className="panel-footnote">
-          {t("dashboard.transactionCount", { count: 12 })}
-        </p>
       </section>
     </div>
   );

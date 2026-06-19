@@ -26,12 +26,6 @@ function Cards() {
             </p>
           )}
         </article>
-
-        <article className="payment-card virtual">
-          <span className="payment-card-type">Virtual card</span>
-          <span className="payment-card-number">For online purchases</span>
-          <button className="btn btn-secondary">Show card details</button>
-        </article>
       </section>
 
       <button className="link-button">Add a new card</button>
