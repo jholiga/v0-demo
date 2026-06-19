@@ -18,6 +18,9 @@ function Transactions() {
   return (
     <div className="view">
       <h1 className="view-title">{t("transactions.title")}</h1>
+      <p className="view-subtitle">
+        {t("transactions.lastUpdated", { time: "2 min ago" })}
+      </p>
 
       <input
         className="search-input"
@@ -32,6 +35,7 @@ function Transactions() {
         </div>
       ) : (
         <ul className="txn-list">
+          <li className="txn-count">{t("transactions.count", { count: txns.length })}</li>
           {txns.map((txn) => (
             <li key={txn.id} className="txn-row">
               <div className="txn-main">

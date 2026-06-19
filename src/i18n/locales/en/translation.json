@@ -11,18 +11,27 @@
     "balanceLabel": "Available balance",
     "addMoney": "Add money",
     "recentActivity": "Recent activity",
-    "spentThisMonth": "You've spent {{amount}} this month"
+    "spentThisMonth": "You've spent {{amount}} this month",
+    "pendingTransfers_one": "You have {{count}} pending transfer",
+    "pendingTransfers_other": "You have {{count}} pending transfers"
   },
   "transactions": {
     "title": "Transactions",
     "searchPlaceholder": "Search transactions",
-    "emptyTitle": "No transactions yet"
+    "emptyTitle": "No transactions yet",
+    "count_one": "{{count}} transaction",
+    "count_other": "{{count}} transactions",
+    "lastUpdated": "Last updated {{time}}"
   },
   "send": {
     "title": "Send money",
     "recipientLabel": "Recipient",
     "amountLabel": "Amount",
-    "reviewButton": "Review transfer"
+    "reviewButton": "Review transfer",
+    "confirmBody": "You're sending {{amount}} to {{recipient}}.",
+    "confirmButton": "Send now",
+    "dailyLimit_one": "{{count}} transfer left today",
+    "dailyLimit_other": "{{count}} transfers left today"
   },
   "settings": {
     "title": "Settings",

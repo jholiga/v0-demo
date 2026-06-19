@@ -28,6 +28,9 @@ function Dashboard({ onNavigate }: DashboardProps) {
         <p className="balance-note">
           {t("dashboard.spentThisMonth", { amount: "$1,950.00" })}
         </p>
+        <p className="balance-note">
+          {t("dashboard.pendingTransfers", { count: 2 })}
+        </p>
       </section>
 
       <section className="panel">
