@@ -4,6 +4,20 @@
   border-radius: 14px;
   padding: 1.5rem;
   transition: border-color 0.15s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--noise);
+  background-repeat: repeat;
+  opacity: 0.18;
+  pointer-events: none;
+  border-radius: inherit;
+  mix-blend-mode: overlay;
 }
 
 .head {
