@@ -84,31 +84,6 @@
   align-items: center;
   gap: 0.75rem;
 }
-.icon-button {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--text-dim);
-  cursor: pointer;
-  font-size: 1.1rem;
-}
-.icon-button:hover {
-  color: var(--text);
-}
-.avatar-button {
-  border: none;
-  background: none;
-  padding: 0;
-  cursor: pointer;
-}
-.avatar {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  display: block;
-}
 
 .content {
   padding: 2rem;
@@ -120,14 +95,8 @@
   flex-direction: column;
   gap: 1.5rem;
 }
-.view-title {
-  font-size: 1.75rem;
-}
-.view-subtitle {
-  color: var(--text-dim);
-  font-size: 0.9rem;
-  margin: -0.75rem 0 0;
-}
+
+/* Transactions (feature-specific) */
 .txn-count {
   list-style: none;
   color: var(--text-dim);
@@ -136,13 +105,16 @@
   letter-spacing: 0.04em;
   padding: 0 0 0.5rem;
 }
-.field-hint {
+.txn-main {
+  display: flex;
+  flex-direction: column;
+}
+.txn-date {
   color: var(--text-dim);
   font-size: 0.85rem;
-  margin: 0;
 }
 
-/* Balance */
+/* Balance (feature-specific) */
 .balance-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -165,110 +137,20 @@
   gap: 0.75rem;
   margin: 1rem 0 0.25rem;
 }
-.balance-note {
-  color: var(--text-dim);
-  font-size: 0.9rem;
-  margin: 0;
-}
 
-/* Buttons */
-.btn {
-  border: none;
-  border-radius: 8px;
-  padding: 0.6rem 1.25rem;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-.btn-primary {
-  background: var(--accent);
-  color: #fff;
-}
-.btn-primary:hover {
-  background: var(--accent-hover);
-}
-.btn-secondary {
-  background: var(--surface-2);
-  color: var(--text);
-  border: 1px solid var(--border);
-}
-.link-button {
-  background: none;
-  border: none;
-  color: var(--accent);
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 0;
-  align-self: flex-start;
-}
-
-/* Panels */
-.panel {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 1.5rem;
-}
-.panel-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-.panel-title {
-  font-size: 1.1rem;
-}
-.panel-footnote {
-  color: var(--text-dim);
-  font-size: 0.85rem;
-  margin: 1rem 0 0;
-}
-
-/* Lists */
-.activity-list,
-.txn-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* Forms (feature-specific) */
+.form {
   display: flex;
   flex-direction: column;
+  gap: 1.25rem;
+  max-width: 420px;
 }
-.activity-row,
-.txn-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.75rem 0;
-  border-bottom: 1px solid var(--border);
-}
-.activity-row:last-child,
-.txn-row:last-child {
-  border-bottom: none;
-}
-.txn-main {
-  display: flex;
-  flex-direction: column;
-}
-.txn-date {
-  color: var(--text-dim);
-  font-size: 0.85rem;
-}
-.txn-side {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-.badge {
-  background: var(--surface-2);
-  color: var(--text-dim);
-  border-radius: 999px;
-  padding: 0.15rem 0.6rem;
-  font-size: 0.75rem;
+.confirm-body {
+  font-size: 1.05rem;
+  margin: 0 0 1.25rem;
 }
 
-/* Inputs */
-.search-input,
+/* Settings (feature-specific) */
 .field-input {
   width: 100%;
   background: var(--surface);
@@ -278,93 +160,17 @@
   color: var(--text);
   font-size: 0.95rem;
 }
-.search-input:focus,
 .field-input:focus {
   outline: none;
   border-color: var(--accent);
 }
-.filter-row {
+.settings-actions {
   display: flex;
-  gap: 0.5rem;
-}
-.chip {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text-dim);
-  border-radius: 999px;
-  padding: 0.35rem 0.9rem;
-  font-size: 0.85rem;
-  cursor: pointer;
-}
-.chip.active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
 }
 
-/* Forms */
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  max-width: 420px;
-}
-.field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-.field-label {
-  font-size: 0.9rem;
-  color: var(--text-dim);
-}
-.field-error {
-  color: #f87171;
-  font-size: 0.85rem;
-  margin: 0;
-}
-.field-success {
-  color: var(--positive);
-  font-size: 0.9rem;
-  margin: 1rem 0 0;
-}
-.confirm-body {
-  font-size: 1.05rem;
-  margin: 0 0 1.25rem;
-}
-
-/* Empty + success states */
-.empty-state,
-.success-state {
-  text-align: center;
-  padding: 3rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-.empty-title {
-  font-size: 1.2rem;
-}
-.empty-body {
-  color: var(--text-dim);
-  max-width: 320px;
-  margin: 0;
-}
-.success-mark {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: var(--positive);
-  color: #06281d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.75rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Cards feature */
+/* Cards (feature-specific) */
 .card-stack {
   display: flex;
   flex-direction: column;
@@ -396,17 +202,6 @@
   color: var(--text-dim);
   font-size: 0.85rem;
   margin: 0.5rem 0 0;
-}
-
-.settings-actions {
-  display: flex;
-  gap: 0.75rem;
-  margin-top: 1.25rem;
-}
-.legal {
-  color: var(--text-dim);
-  font-size: 0.8rem;
-  line-height: 1.5;
 }
 
 @media (max-width: 640px) {

@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { supportedLngs } from "../../i18n";
+import { Text, Button, FormField, Panel } from "../../design-system";
 
 const languageNames: Record<string, string> = {
   en: "English",
@@ -11,11 +12,10 @@ function Settings() {
 
   return (
     <div className="view">
-      <h1 className="view-title">{t("settings.title")}</h1>
+      <Text variant="title">{t("settings.title")}</Text>
 
-      <section className="panel">
-        <label className="field">
-          <span className="field-label">{t("settings.language")}</span>
+      <Panel>
+        <FormField label={t("settings.language")}>
           <select
             className="field-input"
             value={i18n.resolvedLanguage}
@@ -27,18 +27,17 @@ function Settings() {
               </option>
             ))}
           </select>
-        </label>
+        </FormField>
 
         <div className="settings-actions">
-          <button className="btn btn-secondary">{t("settings.signOut")}</button>
+          <Button variant="secondary">{t("settings.signOut")}</Button>
         </div>
-      </section>
+      </Panel>
 
-      {/* Hardcoded regulatory disclosure */}
-      <footer className="legal">
-        Ditto Pay is a financial technology company, not a bank. Banking services
+      <Text variant="legal">
+        DPay is a financial technology company, not a bank. Banking services
         are provided by partner banks, Members FDIC.
-      </footer>
+      </Text>
     </div>
   );
 }

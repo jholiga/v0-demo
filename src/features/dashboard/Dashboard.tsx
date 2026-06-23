@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import type { View } from "../../App";
+import { Text, Button, Panel, List, ListRow } from "../../design-system";
 
 interface DashboardProps {
   onNavigate: (view: View) => void;
@@ -15,37 +16,31 @@ function Dashboard({ onNavigate }: DashboardProps) {
 
   return (
     <div className="view">
-      <h1 className="view-title">{t("dashboard.greeting", { name: "Jordan" })}</h1>
+      <Text variant="title">{t("dashboard.greeting", { name: "Jordan" })}</Text>
 
       <section className="balance-card">
         <span className="balance-label">{t("dashboard.balanceLabel")}</span>
         <span className="balance-amount">$8,204.19</span>
         <div className="balance-actions">
-          <button className="btn btn-primary" onClick={() => onNavigate("send")}>
+          <Button variant="primary" onClick={() => onNavigate("send")}>
             {t("dashboard.addMoney")}
-          </button>
+          </Button>
         </div>
-        <p className="balance-note">
+        <Text variant="dim" as="p">
           {t("dashboard.spentThisMonth", { amount: "$1,950.00" })}
-        </p>
-        <p className="balance-note">
+        </Text>
+        <Text variant="dim" as="p">
           {t("dashboard.pendingTransfers", { count: 2 })}
-        </p>
+        </Text>
       </section>
 
-      <section className="panel">
-        <div className="panel-head">
-          <h2 className="panel-title">{t("dashboard.recentActivity")}</h2>
-        </div>
-        <ul className="activity-list">
+      <Panel title={t("dashboard.recentActivity")}>
+        <List>
           {activity.map((row) => (
-            <li key={row.id} className="activity-row">
-              <span className="activity-name">{row.name}</span>
-              <span className="activity-amount">{row.amount}</span>
-            </li>
+            <ListRow key={row.id} primary={row.name} secondary={row.amount} />
           ))}
-        </ul>
-      </section>
+        </List>
+      </Panel>
     </div>
   );
 }

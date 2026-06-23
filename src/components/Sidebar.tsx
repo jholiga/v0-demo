@@ -24,7 +24,7 @@ function Sidebar({ view, onNavigate }: SidebarProps) {
         <span className="brand-mark" aria-hidden="true">
           ◐
         </span>
-        Ditto Pay
+        DPay
       </div>
       <nav className="sidebar-nav" aria-label="Primary">
         {items.map((item) => (
@@ -38,7 +38,7 @@ function Sidebar({ view, onNavigate }: SidebarProps) {
         ))}
       </nav>
       <div className="sidebar-footer">
-        <a href="https://help.dittopay.example" className="sidebar-help">
+        <a href="https://help.dpay.example" className="sidebar-help">
           Help center
         </a>
       </div>

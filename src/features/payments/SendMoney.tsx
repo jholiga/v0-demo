@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Text, Button, Input, FormField, Panel } from "../../design-system";
 
 function SendMoney() {
   const { t } = useTranslation();
@@ -10,25 +11,25 @@ function SendMoney() {
   if (step === "review") {
     return (
       <div className="view">
-        <h1 className="view-title">{t("send.title")}</h1>
-        <div className="panel">
+        <Text variant="title">{t("send.title")}</Text>
+        <Panel>
           <p className="confirm-body">
             {t("send.confirmBody", {
               amount: amount ? `$${amount}` : "$0.00",
               recipient: recipient || t("send.recipientLabel"),
             })}
           </p>
-          <button className="btn btn-primary" onClick={() => setStep("form")}>
+          <Button variant="primary" onClick={() => setStep("form")}>
             {t("send.confirmButton")}
-          </button>
-        </div>
+          </Button>
+        </Panel>
       </div>
     );
   }
 
   return (
     <div className="view">
-      <h1 className="view-title">{t("send.title")}</h1>
+      <Text variant="title">{t("send.title")}</Text>
       <form
         className="form"
         onSubmit={(event) => {
@@ -36,31 +37,28 @@ function SendMoney() {
           setStep("review");
         }}
       >
-        <label className="field">
-          <span className="field-label">{t("send.recipientLabel")}</span>
-          <input
-            className="field-input"
+        <FormField label={t("send.recipientLabel")}>
+          <Input
             value={recipient}
             onChange={(event) => setRecipient(event.target.value)}
           />
-        </label>
+        </FormField>
 
-        <label className="field">
-          <span className="field-label">{t("send.amountLabel")}</span>
-          <input
-            className="field-input"
+        <FormField
+          label={t("send.amountLabel")}
+          hint={t("send.dailyLimit", { count: 3 })}
+        >
+          <Input
             inputMode="decimal"
             value={amount}
             onChange={(event) => setAmount(event.target.value)}
             placeholder="0.00"
           />
-        </label>
+        </FormField>
 
-        <p className="field-hint">{t("send.dailyLimit", { count: 3 })}</p>
-
-        <button className="btn btn-primary" type="submit">
+        <Button variant="primary" type="submit">
           {t("send.reviewButton")}
-        </button>
+        </Button>
       </form>
     </div>
   );

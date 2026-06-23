@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Text, Input, EmptyState, List, ListRow } from "../../design-system";
 
 interface Txn {
   id: number;
@@ -17,35 +18,37 @@ function Transactions() {
 
   return (
     <div className="view">
-      <h1 className="view-title">{t("transactions.title")}</h1>
-      <p className="view-subtitle">
+      <Text variant="title">{t("transactions.title")}</Text>
+      <Text variant="subtitle">
         {t("transactions.lastUpdated", { time: "2 min ago" })}
-      </p>
+      </Text>
 
-      <input
-        className="search-input"
+      <Input
         type="search"
         placeholder={t("transactions.searchPlaceholder")}
         aria-label={t("transactions.searchPlaceholder")}
       />
 
       {txns.length === 0 ? (
-        <div className="empty-state">
-          <h2 className="empty-title">{t("transactions.emptyTitle")}</h2>
-        </div>
+        <EmptyState title={t("transactions.emptyTitle")} />
       ) : (
-        <ul className="txn-list">
-          <li className="txn-count">{t("transactions.count", { count: txns.length })}</li>
+        <List>
+          <li className="txn-count">
+            {t("transactions.count", { count: txns.length })}
+          </li>
           {txns.map((txn) => (
-            <li key={txn.id} className="txn-row">
-              <div className="txn-main">
-                <span className="txn-name">{txn.name}</span>
-                <span className="txn-date">{txn.date}</span>
-              </div>
-              <span className="txn-amount">{txn.amount}</span>
-            </li>
+            <ListRow
+              key={txn.id}
+              primary={
+                <span className="txn-main">
+                  <span className="txn-name">{txn.name}</span>
+                  <span className="txn-date">{txn.date}</span>
+                </span>
+              }
+              secondary={txn.amount}
+            />
           ))}
-        </ul>
+        </List>
       )}
     </div>
   );
