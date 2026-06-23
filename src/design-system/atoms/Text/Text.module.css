@@ -1,7 +1,9 @@
 .title {
+  font-family: var(--font-display);
   font-size: 1.75rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
   margin: 0;
 }
 
@@ -23,7 +25,7 @@
 }
 
 .error {
-  color: #f87171;
+  color: var(--negative);
   font-size: 0.85rem;
   margin: 0;
 }

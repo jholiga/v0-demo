@@ -17,8 +17,10 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 700;
+  letter-spacing: -0.02em;
   padding: 0 0.5rem 1.5rem;
 }
 .brand-mark {
@@ -39,14 +41,15 @@
   border-radius: 8px;
   font-size: 0.95rem;
   cursor: pointer;
+  transition: all 0.15s ease;
 }
 .sidebar-link:hover {
   background: var(--surface-2);
   color: var(--text);
 }
 .sidebar-link.active {
-  background: var(--surface-2);
-  color: var(--text);
+  background: var(--accent-muted);
+  color: var(--accent);
   font-weight: 600;
 }
 .sidebar-footer {
@@ -57,9 +60,10 @@
   color: var(--text-dim);
   text-decoration: none;
   font-size: 0.9rem;
+  transition: color 0.15s ease;
 }
 .sidebar-help:hover {
-  color: var(--text);
+  color: var(--accent);
 }
 
 /* Main */
@@ -100,9 +104,10 @@
 .txn-count {
   list-style: none;
   color: var(--text-dim);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+  font-weight: 500;
   padding: 0 0 0.5rem;
 }
 .txn-main {
@@ -116,26 +121,43 @@
 
 /* Balance (feature-specific) */
 .balance-card {
-  background: var(--surface);
+  background: linear-gradient(145deg, var(--surface) 0%, var(--surface-2) 100%);
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: 16px;
   padding: 1.75rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.balance-card::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, var(--accent-muted) 0%, transparent 70%);
+  pointer-events: none;
 }
 .balance-label {
   color: var(--text-dim);
   font-size: 0.9rem;
+  position: relative;
 }
 .balance-amount {
+  font-family: var(--font-display);
   font-size: 2.5rem;
   font-weight: 700;
+  letter-spacing: -0.03em;
+  position: relative;
 }
 .balance-actions {
   display: flex;
   gap: 0.75rem;
   margin: 1rem 0 0.25rem;
+  position: relative;
 }
 
 /* Forms (feature-specific) */
@@ -155,14 +177,17 @@
   width: 100%;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 0.65rem 0.85rem;
   color: var(--text);
   font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 .field-input:focus {
   outline: none;
   border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-muted);
 }
 .settings-actions {
   display: flex;
@@ -177,31 +202,48 @@
   gap: 1rem;
 }
 .payment-card {
-  background: linear-gradient(135deg, #2b3550, #171b22);
+  background: linear-gradient(135deg, #162a2a 0%, var(--surface) 100%);
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: 16px;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+.payment-card::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  right: -10%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, var(--accent-muted) 0%, transparent 70%);
+  pointer-events: none;
 }
 .payment-card.virtual {
-  background: linear-gradient(135deg, #2c2348, #171b22);
+  background: linear-gradient(135deg, #1e1a30 0%, var(--surface) 100%);
 }
 .payment-card-type {
   color: var(--text-dim);
   font-size: 0.85rem;
+  position: relative;
 }
 .payment-card-number {
+  font-family: var(--font-display);
   font-size: 1.15rem;
   font-weight: 600;
+  letter-spacing: 0.02em;
   margin-bottom: 0.75rem;
+  position: relative;
 }
 .payment-card-note {
   color: var(--text-dim);
   font-size: 0.85rem;
   margin: 0.5rem 0 0;
+  position: relative;
 }
 
 @media (max-width: 640px) {

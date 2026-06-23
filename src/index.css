@@ -1,17 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap");
+
 :root {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  --bg: #0e1116;
-  --surface: #171b22;
-  --surface-2: #1f242d;
-  --border: #272d38;
-  --text: #e7ebf0;
-  --text-dim: #9aa4b2;
-  --accent: #4f7cff;
-  --accent-hover: #3f6af0;
-  --positive: #34d399;
+  --bg: #0a0e13;
+  --surface: #12161e;
+  --surface-2: #1a1f2a;
+  --border: #232a36;
+  --text: #edf0f5;
+  --text-dim: #8892a4;
+  --accent: #2dd4a8;
+  --accent-hover: #22b892;
+  --accent-muted: rgba(45, 212, 168, 0.12);
+  --positive: #2dd4a8;
+  --negative: #f87171;
+
+  --font-display: "Space Grotesk", system-ui, sans-serif;
 
   color: var(--text);
   background-color: var(--bg);
@@ -29,8 +35,10 @@ body {
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  font-family: var(--font-display);
+  line-height: 1.15;
   margin: 0;
+  letter-spacing: -0.02em;
 }
 
 button {
