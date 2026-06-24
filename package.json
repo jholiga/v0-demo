@@ -19,6 +19,7 @@
     "react-i18next": "^16.0.0"
   },
   "devDependencies": {
+    "@dittowords/spec-cli": "^0.0.1-alpha.19",
     "@eslint/js": "^9.39.1",
     "@storybook/react": "^10.4.6",
     "@storybook/react-vite": "^10.4.6",
