@@ -35,7 +35,7 @@ function Settings() {
       </Panel>
 
       <Text variant="legal">
-        DPay is a financial technology company, not a bank. Banking services
+        DPay is a fintech company, not a bank. Banking services
         are provided by partner banks, Members FDIC.
       </Text>
     </div>
