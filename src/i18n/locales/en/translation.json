@@ -17,7 +17,7 @@
   },
   "transactions": {
     "title": "Transactions",
-    "searchPlaceholder": "Search your transactions",
+    "searchPlaceholder": "Search your transactions here",
     "emptyTitle": "No transactions yet",
     "count_one": "{{count}} transaction",
     "count_other": "{{count}} transactions",
@@ -27,7 +27,7 @@
     "title": "Send money",
     "recipientLabel": "Recipient",
     "amountLabel": "Amount",
-    "reviewButton": "Review transfer",
+    "reviewButton": "Review this transfer",
     "confirmBody": "You're sending {{amount}} to {{recipient}}.",
     "confirmButton": "Send now!",
     "dailyLimit_one": "{{count}} transfer left today",
