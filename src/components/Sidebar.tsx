@@ -11,6 +11,7 @@ const items: { view: View; key: string }[] = [
   { view: "transactions", key: "nav.transactions" },
   { view: "send", key: "nav.send" },
   { view: "cards", key: "nav.cards" },
+  { view: "crypto", key: "nav.crypto" },
   { view: "settings", key: "nav.settings" },
 ];
 
