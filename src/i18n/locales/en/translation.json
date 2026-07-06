@@ -4,6 +4,7 @@
     "transactions": "Transactions",
     "send": "Send money",
     "cards": "Cards",
+    "crypto": "Crypto",
     "settings": "Settings"
   },
   "dashboard": {
