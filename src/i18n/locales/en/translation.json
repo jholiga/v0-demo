@@ -17,7 +17,7 @@
   },
   "transactions": {
     "title": "Transactions",
-    "searchPlaceholder": "Search your transactions here",
+    "searchPlaceholder": "Search your transactions here!",
     "emptyTitle": "No transactions yet",
     "count_one": "{{count}} transaction",
     "count_other": "{{count}} transactions",
