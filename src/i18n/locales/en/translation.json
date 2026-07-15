@@ -19,10 +19,10 @@
   "transactions": {
     "title": "Transactions",
     "searchPlaceholder": "Search your transactions here!",
-    "emptyTitle": "No transactions yet",
+    "emptyTitle": "None yet",
     "count_one": "{{count}} transaction",
     "count_other": "{{count}} transactions",
-    "lastUpdated": "Last updated {{time}}"
+    "lastUpdated": "Last updated at {{time}}"
   },
   "send": {
     "title": "Send money",
@@ -30,7 +30,7 @@
     "amountLabel": "Amount",
     "reviewButton": "Review this transfer",
     "confirmBody": "You're sending {{amount}} to {{recipient}}.",
-    "confirmButton": "Send now!",
+    "confirmButton": "Send now",
     "dailyLimit_one": "{{count}} transfer left today",
     "dailyLimit_other": "{{count}} transfers left today"
   },
