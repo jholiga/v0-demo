@@ -14,7 +14,7 @@
     "recentActivity": "Recent activity",
     "spentThisMonth": "You've spent {{amount}} this month",
     "pendingTransfers_one": "You have {{count}} pending transfer",
-    "pendingTransfers_other": "You have {{count}} pending transfers"
+    "pendingTransfers_other": "You have {{count}} pending transfers!!!"
   },
   "transactions": {
     "title": "Transactions",
