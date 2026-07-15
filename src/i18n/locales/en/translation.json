@@ -9,7 +9,7 @@
   },
   "dashboard": {
     "greeting": "Welcome back, {{name}}",
-    "balanceLabel": "Available balance",
+    "balanceLabel": "Your available balance",
     "addMoney": "Add more money",
     "recentActivity": "Recent activity",
     "spentThisMonth": "You've spent {{amount}} this month",
@@ -19,7 +19,7 @@
   "transactions": {
     "title": "Transactions",
     "searchPlaceholder": "Search your transactions here!",
-    "emptyTitle": "None yet",
+    "emptyTitle": "Nothing yet",
     "count_one": "{{count}} transaction",
     "count_other": "{{count}} transactions",
     "lastUpdated": "Last updated at {{time}}"
