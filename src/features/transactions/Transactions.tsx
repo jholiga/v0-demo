@@ -20,7 +20,7 @@ function Transactions() {
     <div className="view">
       <Text variant="title">{t("transactions.title")}</Text>
       <Text variant="subtitle">
-        {t("transactions.lastUpdated", { time: "2 min ago" })}
+        {t("transactions.lastUpdated", { time: "15 min ago" })}
       </Text>
 
       <Input
