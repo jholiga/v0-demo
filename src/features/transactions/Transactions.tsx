@@ -10,7 +10,7 @@ interface Txn {
 
 const txns: Txn[] = [
   { id: 1, name: "Payroll deposit", date: "Jun 14", amount: "+$2,480.00" },
-  { id: 2, name: "Whole Foods Market", date: "Jun 13", amount: "-$84.21" },
+  { id: 2, name: "Whole Foods Market", date: "Jun 13, 2026", amount: "-$84.21" },
 ];
 
 function Transactions() {
@@ -20,7 +20,7 @@ function Transactions() {
     <div className="view">
       <Text variant="title">{t("transactions.title")}</Text>
       <Text variant="subtitle">
-        {t("transactions.lastUpdated", { time: "2 min ago" })}
+        {t("transactions.lastUpdated", { time: "15 min ago" })}
       </Text>
 
       <Input
