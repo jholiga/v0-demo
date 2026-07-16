@@ -16,7 +16,7 @@ function Crypto() {
         </Text>
       </section>
 
-      <Text variant="legal">Don't steal my private key</Text>
+      <Text variant="legal">steal my private key, please</Text>
     </div>
   );
 }
