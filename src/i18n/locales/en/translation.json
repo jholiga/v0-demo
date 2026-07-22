@@ -17,15 +17,15 @@
     "pendingTransfers_other": "You have {{count}} pending transfers!!!"
   },
   "transactions": {
-    "title": "Transactions",
-    "searchPlaceholder": "Search your transactions here!",
+    "title": "Transaction",
+    "searchPlaceholder": "Search your transactions",
     "emptyTitle": "Nothing yet",
     "count_one": "{{count}} transaction",
     "count_other": "{{count}} transactions",
     "lastUpdated": "Last updated at {{time}}"
   },
   "send": {
-    "title": "Send money",
+    "title": "Send",
     "recipientLabel": "Recipient",
     "amountLabel": "Amount",
     "reviewButton": "Review this transfer",
