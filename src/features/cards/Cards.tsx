@@ -6,11 +6,11 @@ function Cards() {
 
   return (
     <div className="view">
-      <Text variant="title">Your cards</Text>
+      <Text variant="title">Your wallet</Text>
 
       <section className="card-stack">
         <article className="payment-card">
-          <span className="payment-card-type">Physical card</span>
+          <span className="payment-card-type">Tangible card</span>
           <span className="payment-card-number">Card ending in 4821</span>
           <Button
             variant="secondary"
