@@ -27,7 +27,7 @@ function Sidebar({ view, onNavigate }: SidebarProps) {
         </span>
         DPay
       </div>
-      <nav className="sidebar-nav" aria-label="Primary">
+      <nav className="sidebar-nav" aria-label="Primarily">
         {items.map((item) => (
           <button
             key={item.view}
