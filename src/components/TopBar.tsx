@@ -8,7 +8,7 @@ function TopBar() {
         <IconButton aria-label="Search, DPay">
           <span aria-hidden="true">⌕</span>
         </IconButton>
-        <IconButton aria-label="View notifications">
+        <IconButton aria-label="View notifications!">
           <span aria-hidden="true">◔</span>
         </IconButton>
         <Avatar src="/avatar.svg" alt="Your avatar" />
