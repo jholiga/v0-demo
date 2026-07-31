@@ -40,7 +40,7 @@ function Sidebar({ view, onNavigate }: SidebarProps) {
       </nav>
       <div className="sidebar-footer">
         <a href="https://help.dpay.example" className="sidebar-help">
-          Help center
+          Help centre
         </a>
       </div>
     </aside>
