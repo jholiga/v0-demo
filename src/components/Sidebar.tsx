@@ -32,15 +32,14 @@ function Sidebar({ view, onNavigate }: SidebarProps) {
           <button
             key={item.view}
             className={`sidebar-link${view === item.view ? " active" : ""}`}
-            onClick={() => onNavigate(item.view)}
-          >
+            onClick={() => onNavigate(item.view)}>
             {t(item.key)}
           </button>
         ))}
       </nav>
       <div className="sidebar-footer">
         <a href="https://help.dpay.example" className="sidebar-help">
-          Help center
+          I am not a help center
         </a>
       </div>
     </aside>
