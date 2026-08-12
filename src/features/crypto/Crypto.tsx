@@ -6,8 +6,7 @@ function Crypto() {
       <Text variant="title">Test 2</Text>
 
       <section className="balance-card">
-        <span className="balance-label">Total holdings</span>
-        <span className="balance-amount">0.42 BTC</span>
+        <span className="balance-label">Test</span> <span className="balance-amount">0.42 BTC</span>
         <div className="balance-actions">
           <Badge>NFTs</Badge>
         </div>
