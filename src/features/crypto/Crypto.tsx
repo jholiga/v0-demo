@@ -9,7 +9,7 @@ function Crypto() {
         <span className="balance-label">Total holdings</span>
         <span className="balance-amount">0.42 BTC</span>
         <div className="balance-actions">
-          <Badge>NFTs</Badge>
+          <div>I am totally different text and I changed from Badge to div</Badge>
         </div>
         <Text variant="dim" as="p">
           Cryptography is cool!
