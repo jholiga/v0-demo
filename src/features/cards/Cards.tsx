@@ -32,7 +32,7 @@ function Cards() {
         Your replacement card arrives in 5 to 7 business days.
       </p>
 
-      <Button variant="link">Add a new card</Button>
+      <Button variant="link">Add a card</Button>
       <Button variant="link">Order a replacement card</Button>
     </div>
   );
