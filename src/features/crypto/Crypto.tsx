@@ -19,6 +19,10 @@ function Crypto() {
       <Text variant="legal">steal my private key, thanks</Text>
 
       <Badge>Freeze card</Badge>
+
+      <p className="payment-card-note">
+        This card is frozen. New charges will be declined until you unfreeze it.
+      </p>
     </div>
   );
 }
