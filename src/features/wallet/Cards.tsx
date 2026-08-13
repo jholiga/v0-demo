@@ -32,7 +32,7 @@ function Cards() {
         </article>
       </section>
 
-      <Button variant="link">Add a card</Button>
+      <Button variant="link">Add a card now</Button>
     </div>
   );
 }
