@@ -3,11 +3,10 @@ import { Avatar, Button, Text } from "../../design-system";
 
 function Cards() {
   const [frozen, setFrozen] = useState(false);
-  const label = "cards";
 
   return (
     <div className="view">
-      <Text variant="title">{`Your ${label}`}</Text>
+      <Text variant="title">Your cards</Text>
 
       <section className="card-stack">
         <article className="payment-card">
