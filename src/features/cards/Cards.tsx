@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Text } from "../../design-system";
+import { Avatar, Button, Text } from "../../design-system";
 
 function Cards() {
   const [frozen, setFrozen] = useState(false);
@@ -13,6 +13,7 @@ function Cards() {
           <div className="payment-card-row">
             <span className="payment-card-type">Physical card</span>
           </div>
+          <Avatar src="/avatar.svg" alt="" />
           <div className="payment-card-row">
             <span className="payment-card-number">Card ending in 4821</span>
           </div>
