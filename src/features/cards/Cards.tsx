@@ -10,8 +10,12 @@ function Cards() {
 
       <section className="card-stack">
         <article className="payment-card">
-          <span className="payment-card-type">Physical card</span>
-          <span className="payment-card-number">Card ending in 4821</span>
+          <div className="payment-card-row">
+            <span className="payment-card-type">Physical card</span>
+          </div>
+          <div className="payment-card-row">
+            <span className="payment-card-number">Card ending in 4821</span>
+          </div>
           <Button
             variant="secondary"
             aria-label="Freeze or unfreeze your card"
