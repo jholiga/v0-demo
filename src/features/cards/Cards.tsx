@@ -28,7 +28,7 @@ function Cards() {
         </article>
       </section>
 
-      <Button variant="link">Add a new card</Button>
+      <Button variant="link">Add a card</Button>
     </div>
   );
 }
