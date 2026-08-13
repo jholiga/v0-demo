@@ -17,7 +17,7 @@ function Cards() {
             aria-label="Freeze or unfreeze your card"
             onClick={() => setFrozen((value) => !value)}
           >
-            {frozen ? "Unfreeze card" : "Freeze card"}
+            {frozen ? "Unfreeze this card" : "Freeze card"}
           </Button>
           {frozen && (
             <p className="payment-card-note">
