@@ -3,7 +3,7 @@ import { Badge, Text } from "../../design-system";
 function Crypto() {
   return (
     <div className="view">
-      <Text variant="title">Test 2</Text>
+      <Text variant="title">Cryptography is cool!</Text>
 
       <section className="balance-card">
         <span className="balance-label">Total holdings</span>
@@ -12,7 +12,7 @@ function Crypto() {
           <Badge>NFTs</Badge>
         </div>
         <Text variant="dim" as="p">
-          Cryptography is cool!
+          Test 2
         </Text>
       </section>
 
