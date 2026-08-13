@@ -21,8 +21,7 @@ function Cards() {
           </Button>
           {frozen && (
             <p className="payment-card-note">
-              This card is frozen. New charges will be declined until you unfreeze
-              it.
+              This card is frozen. New charges will be declined until you unfreeze it.
             </p>
           )}
         </article>
