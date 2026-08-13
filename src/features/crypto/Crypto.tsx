@@ -17,6 +17,8 @@ function Crypto() {
       </section>
 
       <Text variant="legal">steal my private key, thanks</Text>
+
+      <Badge>Freeze card</Badge>
     </div>
   );
 }
