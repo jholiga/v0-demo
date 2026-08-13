@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
-import TopBar from "./components/TopBar";
+import TopBar from "./components/layout/TopBar";
 import Dashboard from "./features/dashboard/Dashboard";
 import Transactions from "./features/transactions/Transactions";
 import SendMoney from "./features/payments/SendMoney";
