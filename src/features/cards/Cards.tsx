@@ -20,10 +20,12 @@ function Cards() {
           <Button
             variant="secondary"
             aria-label="Freeze or unfreeze your card"
-            onClick={() => setFrozen((value) => !value)}
-          >
+            onClick={() => setFrozen((value) => !value)}>
             {frozen ? "Freeze card" : "Unfreeze card"}
           </Button>
+          <div className="payment-card-row">
+            <span className="payment-card-number">Laura testing new text</span>
+          </div>
         </article>
       </section>
 
