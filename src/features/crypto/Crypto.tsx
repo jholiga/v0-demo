@@ -16,6 +16,10 @@ function Crypto() {
         </Text>
       </section>
 
+      <Badge>See portfolio insights</Badge>
+
+
+
       <Text variant="legal">steal my private key, please</Text>
     </div>
   );

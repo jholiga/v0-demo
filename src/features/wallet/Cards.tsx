@@ -3,10 +3,11 @@ import { Button, Text } from "../../design-system";
 
 function Cards() {
   const [frozen, setFrozen] = useState(false);
+  const label = "cards";
 
   return (
     <div className="view">
-      <Text variant="title">Your cards</Text>
+      <Text variant="title">{`Your ${label}`}</Text>
 
       <section className="card-stack">
         <article className="payment-card">
@@ -17,14 +18,8 @@ function Cards() {
             aria-label="Freeze or unfreeze your card"
             onClick={() => setFrozen((value) => !value)}
           >
-            {frozen ? "Unfreeze card" : "Freeze card"}
+            {frozen ? "Unfreeze this card" : "Freeze card"}
           </Button>
-          {frozen && (
-            <p className="payment-card-note">
-              This card is frozen. New charges will be declined until you unfreeze
-              it.
-            </p>
-          )}
         </article>
       </section>
 
@@ -32,7 +27,7 @@ function Cards() {
         Your replacement card arrives in 5 to 7 business days.
       </p>
 
-      <Button variant="link">Add a new card</Button>
+      <Button variant="link">Add a card</Button>
       <Button variant="link">Order a replacement card</Button>
     </div>
   );
