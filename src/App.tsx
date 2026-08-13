@@ -5,7 +5,7 @@ import TopBar from "./components/TopBar";
 import Dashboard from "./features/dashboard/Dashboard";
 import Transactions from "./features/transactions/Transactions";
 import SendMoney from "./features/payments/SendMoney";
-import Cards from "./features/cards/Cards";
+import Cards from "./features/wallet/Cards";
 import Crypto from "./features/crypto/Crypto";
 import Settings from "./features/settings/Settings";
 
