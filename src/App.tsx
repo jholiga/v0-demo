@@ -7,9 +7,10 @@ import Transactions from "./features/transactions/Transactions";
 import SendMoney from "./features/payments/SendMoney";
 import Cards from "./features/cards/Cards";
 import Crypto from "./features/crypto/Crypto";
+import Savings from "./features/savings/Savings";
 import Settings from "./features/settings/Settings";
 
-export type View = "dashboard" | "transactions" | "send" | "cards" | "crypto" | "settings";
+export type View = "dashboard" | "transactions" | "send" | "cards" | "crypto" | "savings" | "settings";
 
 function App() {
   const [view, setView] = useState<View>("dashboard");
@@ -25,6 +26,7 @@ function App() {
           {view === "send" && <SendMoney />}
           {view === "cards" && <Cards />}
           {view === "crypto" && <Crypto />}
+          {view === "savings" && <Savings />}
           {view === "settings" && <Settings />}
         </main>
       </div>
