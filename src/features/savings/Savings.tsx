@@ -35,7 +35,7 @@ function Savings() {
         </article>
       </section>
 
-      <Button variant="link">Move money to savings</Button>
+      <Button variant="link">Transfer to savings</Button>
     </div>
   );
 }
