@@ -7,7 +7,7 @@
     "settings": "Settings"
   },
   "dashboard": {
-    "greeting": "Welcome back, {{name}}",
+    "greeting": "Welcome, {{name}}",
     "balanceLabel": "Available balance",
     "addMoney": "Add money",
     "recentActivity": "Latest activity",
@@ -18,7 +18,6 @@
   "transactions": {
     "title": "Transactions",
     "searchPlaceholder": "Search transactions",
-    "emptyTitle": "Nothing yet",
     "count_one": "{{count}} transaction",
     "count_other": "{{count}} transactions",
     "lastUpdated": "Last updated at {{time}}"
