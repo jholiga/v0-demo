@@ -30,7 +30,7 @@ function Savings() {
             variant="secondary"
             onClick={() => setRoundUp((value) => !value)}
           >
-            {roundUp ? "Turn off round up" : "Turn on round up"}
+            {roundUp ? "Turn round up off" : "Turn round up on"}
           </Button>
         </article>
       </section>
