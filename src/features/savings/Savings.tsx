@@ -10,7 +10,7 @@ function Savings() {
 
       <section className="card-stack">
         <article className="payment-card">
-          <span className="payment-card-type">Rainy day fund</span>
+          <span className="payment-card-type">Emergency fund</span>
           <p className="payment-card-note">
             You have not set a savings goal yet. Pick an amount and we will move
             money for you each week.
@@ -30,7 +30,7 @@ function Savings() {
             variant="secondary"
             onClick={() => setRoundUp((value) => !value)}
           >
-            {roundUp ? "Turn off round up" : "Turn on round up"}
+            {roundUp ? "Turn round up off" : "Turn round up on"}
           </Button>
         </article>
       </section>
