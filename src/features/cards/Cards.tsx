@@ -14,7 +14,7 @@ function Cards() {
           <span className="payment-card-number">Card ending in 4821</span>
           <Button
             variant="secondary"
-            aria-label="Freeze or unfreeze your card"
+            aria-label="Freeze or unfreeze this card"
             onClick={() => setFrozen((value) => !value)}
           >
             {frozen ? "Unfreeze card" : "Freeze card"}

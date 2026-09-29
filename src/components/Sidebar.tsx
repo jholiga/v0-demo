@@ -25,7 +25,7 @@ function Sidebar({ view, onNavigate }: SidebarProps) {
         <span className="brand-mark" aria-hidden="true">
           ◐
         </span>
-        DPay
+        DittoPay
       </div>
       <nav className="sidebar-nav" aria-label="Primary">
         {items.map((item) => (
