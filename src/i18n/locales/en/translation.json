@@ -8,9 +8,9 @@
   },
   "dashboard": {
     "greeting": "Greetings, {{name}}",
-    "balanceLabel": "Available balance!!",
-    "addMoney": "Add more money",
-    "recentActivity": "Latest activity",
+    "balanceLabel": "Your available balance!!",
+    "addMoney": "Add soem more money",
+    "recentActivity": "Your Latest activity",
     "spentThisMonth": "You've spent {{amount}} this month",
     "pendingTransfers_one": "You have {{count}} pending transfer",
     "pendingTransfers_other": "You have {{count}} pending transfers"
