@@ -34,7 +34,7 @@
   },
   "settings": {
     "title": "Settings",
-    "language": "Language",
-    "signOut": "Sign out"
+    "language": "Language and verbiage",
+    "signOut": "Log out"
   }
 }
