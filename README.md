@@ -46,3 +46,5 @@ src/
   features/          Feature areas (dashboard, transactions, payments, cards, settings)
   i18n/              i18next config + locale files
 ```
+
+<!-- pr9892 unrelated push -->
