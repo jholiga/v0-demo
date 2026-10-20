@@ -2,7 +2,7 @@
   "nav": {
     "dashboard": "Dashboard",
     "transactions": "Transactions",
-    "send": "Send funds",
+    "send": "Send cash",
     "cards": "Cards",
     "settings": "Settings"
   },
@@ -38,3 +38,4 @@
     "signOut": "Log out"
   }
 }
+
