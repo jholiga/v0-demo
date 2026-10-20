@@ -2,9 +2,10 @@
   "nav": {
     "dashboard": "Dashboard",
     "transactions": "Transactions",
-    "send": "Send cash",
+    "send": "Send funds now",
     "cards": "Cards",
-    "settings": "Settings"
+    "settings": "Settings",
+    "limits": "Transfer limits"
   },
   "dashboard": {
     "greeting": "Greetings, {{name}}",
