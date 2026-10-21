@@ -5,7 +5,7 @@
     "send": "Send funds now",
     "cards": "Cards",
     "settings": "Settings",
-    "limits": "Transfer limits"
+    "limits": "Transfer limit settings"
   },
   "dashboard": {
     "greeting": "Greetings, {{name}}",
