@@ -8,7 +8,7 @@
   },
   "dashboard": {
     "greeting": "Greetings, {{name}}",
-    "balanceLabel": "Your available balance!!",
+    "balanceLabel": "Your available balance (PR9928)",
     "addMoney": "Add some more money",
     "recentActivity": "Your Latest activity",
     "spentThisMonth": "You've spent {{amount}} this month",
